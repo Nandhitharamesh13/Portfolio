@@ -1,9 +1,9 @@
+
+
 function handleSubmit(event) {
     event.preventDefault();
-  
     const form = event.target;
     const formData = new FormData(form);
-  
     fetch('https://formspree.io/f/xeoaldeo', {
       method: 'POST',
       body: formData,
@@ -11,15 +11,18 @@ function handleSubmit(event) {
         'Accept': 'application/json'
       }
     })
-    .then((response) => response.json())
-    .then((data) => {
-      if (data.success) {
-        document.getElementById('success-message').textContent = 'Thanks for contacting me!';
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
       } else {
-        document.getElementById('success-message').textContent = 'Error sending message. Please try again.';
+        throw new Error('Error sending message');
       }
     })
+    .then((data) => {
+      document.getElementById('success-message').textContent = 'Thanks for contacting me!';
+    })
     .catch((error) => {
+      document.getElementById('success-message').textContent = 'Error sending message. Please try again.';
       console.error('Error sending message:', error);
     });
   }
