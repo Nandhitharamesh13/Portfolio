@@ -108,7 +108,6 @@ section {
     background-color: var(--accent-color);
 }
 
-/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -133,6 +132,8 @@ nav {
     font-size: 24px;
     color: var(--accent-color);
     text-decoration: none;
+    opacity: 0;
+    transform: translateY(-20px);
 }
 
 .nav-links {
@@ -147,6 +148,8 @@ nav {
     font-size: 16px;
     transition: color var(--transition-speed);
     position: relative;
+    opacity: 0;
+    transform: translateY(-10px);
 }
 
 .nav-link::after {
@@ -168,9 +171,18 @@ nav {
     width: 100%;
 }
 
+.nav-link.active {
+    color: var(--accent-color);
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
 .menu-btn {
     display: none;
     cursor: pointer;
+    opacity: 0;
 }
 
 .menu-btn__burger {
@@ -217,35 +229,41 @@ nav {
         transition: right 0.5s ease;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
     }
-    
+
     .nav-active {
         right: 0;
     }
-    
+
     .menu-btn {
         display: block;
         z-index: 101;
     }
-    
+
     .menu-btn.open .menu-btn__burger {
         background: transparent;
     }
-    
+
     .menu-btn.open .menu-btn__burger::before {
         transform: rotate(45deg);
     }
-    
+
     .menu-btn.open .menu-btn__burger::after {
         transform: rotate(-45deg);
     }
-    
+
     nav {
         padding: 15px 20px;
     }
+}.nav-link.active {
+    color: var(--accent-color);
+}
+
+.nav-link.active::after {
+    width: 100%;
 }
 
 /* Hero Section */
-.hero {
+.hero { 
     height: 100vh;
     display: flex;
     align-items: center;
@@ -285,6 +303,7 @@ nav {
 
 .text-container {
     max-width: 700px;
+    margin-right: 480px;
 }
 
 .hero h1 {
@@ -328,6 +347,7 @@ nav {
     color: var(--accent-color);
     transform: translateY(-5px);
 }
+
 
 /* About Section */
 .about {
@@ -373,6 +393,7 @@ nav {
 }
 
 /* Skills Section */
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -409,7 +430,7 @@ nav {
     height: 100%;
     background-color: var(--accent-color);
     border-radius: 10px;
-    transition: width 1.5s ease;
+    transition: width 1s ease-in-out;
 }
 
 /* Projects Section */
