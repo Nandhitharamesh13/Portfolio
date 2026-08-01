@@ -320,7 +320,6 @@ nav {
 
 .text-container {
     max-width: 700px;
-    margin-right: 480px;
 }
 
 .hero h1 {
@@ -1073,80 +1072,183 @@ footer {
     gap: 20px;
 }
 
-/* Media Queries */
+/* ==========================================
+   RESPONSIVE — TABLET (≤992px)
+   ========================================== */
 @media (max-width: 992px) {
-    .hero h1 {
-        font-size: 3rem;
-    }
-    
-    .hero h2 {
-        font-size: 1.5rem;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
-    
-    .timeline::before {
-        left: 30px;
-    }
-    
-    .timeline-item::after {
-        left: 30px;
-    }
-    
+    .hero h1  { font-size: 3rem; }
+    .hero h2  { font-size: 1.5rem; }
+    .section-title { font-size: 2rem; }
+
+    /* Timeline collapses to single column */
+    .timeline::before { left: 30px; }
+    .timeline-item::after { left: 30px; }
     .timeline-content {
         width: calc(100% - 70px);
         margin-left: 70px !important;
     }
-    
     .timeline-item:nth-child(odd) .timeline-content::before,
     .timeline-item:nth-child(even) .timeline-content::before {
         left: -10px;
         right: auto;
     }
+
+    /* Skills: 2 columns */
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Projects: 2 columns */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Certs: 2 columns */
+    .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact: 2 columns */
+    .contact-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }
 
+/* ==========================================
+   RESPONSIVE — MOBILE (≤768px)
+   ========================================== */
 @media (max-width: 768px) {
-    section {
-        padding: 70px 0;
+    /* Base spacing */
+    section { padding: 60px 0; }
+    .container { padding: 0 16px; }
+
+    /* Nav */
+    nav { padding: 14px 16px; }
+    .nav-scrolled { padding: 10px 16px; }
+
+    /* Hero */
+    .hero {
+        height: auto;
+        min-height: 100svh;
+        padding: 100px 0 60px;
+        align-items: flex-start;
     }
-    
+    .hero-content { gap: 24px; }
+    .text-container { max-width: 100%; }
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: clamp(2rem, 8vw, 3rem);
+        margin-bottom: 10px;
+        word-break: break-word;
     }
-    
     .hero h2 {
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 4vw, 1.4rem);
+        margin-bottom: 14px;
     }
-    
     .hero p {
-        font-size: 1rem;
+        font-size: clamp(0.9rem, 3.5vw, 1rem);
+        margin-bottom: 20px;
+        max-width: 100%;
     }
-    
     .hero-btns {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
-    
     .btn {
         width: 100%;
         text-align: center;
+        padding: 13px 20px;
     }
-    
-    .about-stats {
+    .social-icons { gap: 16px; }
+
+    /* Section titles */
+    .section-title {
+        font-size: clamp(1.6rem, 6vw, 2rem);
+        margin-bottom: 40px;
+    }
+
+    /* About */
+    .about-text { text-align: left; }
+    .about-text p { font-size: 0.95rem; }
+
+    /* Skills: single column */
+    .skills-container {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
-    
+
+    /* Projects: single column */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .project-preview { height: 180px; }
+
+    /* Certs: single column */
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .cert-preview-wrap { height: 200px; }
+
+    /* Achievements */
+    .achievements-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .achievement-item { padding: 18px; }
+
+    /* Contact: stack */
     .contact-content {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
-    
+    .contact-info { gap: 20px; }
+    .contact-item { gap: 14px; }
+
+    /* Footer */
     .footer-content {
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
         text-align: center;
     }
+    .footer-social { justify-content: center; }
+}
+
+/* ==========================================
+   RESPONSIVE — SMALL MOBILE (≤480px)
+   ========================================== */
+@media (max-width: 480px) {
+    .hero h1  { font-size: clamp(1.8rem, 9vw, 2.4rem); }
+    .hero h2  { font-size: clamp(0.95rem, 4vw, 1.1rem); }
+    .hero p   { font-size: 0.88rem; }
+
+    .section-title { font-size: 1.5rem; }
+
+    /* Skills bars slightly smaller */
+    .skill-bar { height: 6px; }
+
+    /* Cert card: tighter */
+    .cert-preview-wrap { height: 175px; }
+    .cert-info { padding: 14px 16px 16px; }
+    .cert-info h3 { font-size: 0.92rem; }
+
+    /* Project preview smaller */
+    .project-preview { height: 155px; }
+    .preview-icon { font-size: 3.5rem; }
+
+    /* Timeline tighter */
+    .timeline-content {
+        width: calc(100% - 55px);
+        margin-left: 55px !important;
+        padding: 18px;
+    }
+    .timeline::before { left: 22px; }
+    .timeline-item::after { left: 22px; }
+
+    /* Contact form inputs */
+    .form-group input,
+    .form-group textarea { font-size: 14px; }
 }
 
 /* Animation Delay Classes */
