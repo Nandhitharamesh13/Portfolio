@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/broken-link.png">
     <title >Nandhitha's-Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -27,6 +28,7 @@
             <a href="#skills" class="nav-link">Skills</a>
             <a href="#projects" class="nav-link">Projects</a>
             <a href="#education" class="nav-link">Education</a>
+            <a href="#certifications" class="nav-link">Certifications</a>
             <a href="#contact" class="nav-link">Contact</a>
         </div>
         <div class="menu-btn">
@@ -40,8 +42,9 @@
             <div class="hero-content">
                 <div class="text-container">
                     <h1 class="hidden">Hi, I'm <span class="highlight">Nandhitha R</span></h1>
-                    <h2 class="hidden">Full Stack Developer | <class='business-analyst' style="color: #ff6b6b;">Business Analyst</class></h2>
-                    <p class="hidden">Full Stack Developer & Business Analyst, backed by hands-on Cloud Infrastructure experience.</p>
+                    <h2 class="hidden">Full Stack Developer | Business Analyst</h2>
+                    <p class="hidden">Full Stack Developer skilled in React, Node.js, and REST API development — with Business Analysis and Cloud Infrastructure experience that helps me build platforms end-to-end, from requirements to deployment.
+.</p>
                     <div class="hero-btns hidden">
                         <a href="#contact" class="btn primary-btn">Contact Me</a>
                         <a href="#projects" class="btn secondary-btn">View Projects</a>
@@ -49,9 +52,8 @@
                 </div>
                 
                 <div class="social-icons hidden">
-                    <a href="https://github.com/Nandhitharamesh13" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="linkedin.com/in/nandhitha-r-63a4332a0" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/Nandhitharamesh13" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nandhitha-r-63a4332a0" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
                 </div>
             
                     </div>
@@ -67,24 +69,11 @@
             <h2 class="section-title hidden">About Me</h2>
             <div class="about-content">
                 <div class="about-text hidden">
-                    <p>I currently work as a Cloud & Infrastructure Engineer at LTM limited, managing enterprise cloud operations and resolving technical incidents in fast-paced, customer-facing environments. This role sharpened the analytical and problem-solving instincts I now bring to both software development and business analysis.</p>
-                    <p>On the development side, I've built web and mobile applications through internships and academic projects, using HTML, CSS, JavaScript, and Flutter, with a focus on usability and clean implementation. </p> <p>On the business side, I work across the full analysis lifecycle: requirements gathering, BRDs and FRDs, user stories, wireframes, and market/competitive analysis, translating business needs into product decisions. </p> <p>I'm looking for a role where I can apply both — building products and shaping the thinking behind them.
-</p>
-                    <a href="#" class="btn primary-btn">Download Resume</a>
-                </div>
-                <div class="about-stats hidden">
-                    <div class="stat">
-                        <h3>Education</h3>
-                        <p>Master of Computer Applications - 2027</p>
-                    </div>
-                    <div class="stat">
-                        <h3>Experience</h3>
-                        <p>Cloud & Infrastructure Engineer at LTM limited</p>
-                    </div>
-                    <div class="stat">
-                        <h3>Leadership</h3>
-                        <p>Department Secretary</p>
-                    </div>
+                    <p>I'm a Full Stack Developer with hands-on experience building responsive web applications using React, Node.js, JavaScript, HTML, and CSS, along with backend work involving REST APIs, SQL/MongoDB, and JWT-based authentication.</p>
+                    <p>I've built a full-stack e-commerce platform (React + Vite frontend, Express + SQLite backend) with a secure admin dashboard for managing products, orders, and users — experience that translates directly to building booking, vendor, and marketplace-style platforms.</p>
+                    <p>My background as a Cloud &amp; Infrastructure Engineer at LTM Limited gives me a strong grasp of application security, performance, and scalability, while my Business Analysis experience (requirements gathering, BRDs/FRDs, wireframes) helps me collaborate closely with designers and business teams to turn ideas into working features.</p>
+                    <p>I'm looking for a role where I can build a platform from the ground up — owning both the technical architecture and the product thinking behind it.</p>
+                    <a href="Nandhitha_R_Resume_FullStackDeveloper (2).pdf" class="btn primary-btn">Download Resume</a>
                 </div>
             </div>
         </div>
@@ -95,8 +84,8 @@
         <div class="container">
             <h2 class="section-title hidden">My Skills</h2>
             <div class="skills-container">
-                <div class="skill-category hidden">
-                    <h3>Programming</h3>
+                <div class="skill-category hidden" data-cat="programming">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span>Python</span>
@@ -116,8 +105,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="skill-category hidden">
-                    <h3>Analytical Skill</h3>
+                
+                <div class="skill-category hidden" data-cat="analytical">
+                    <h3><i class="fas fa-chart-bar"></i> Analytical Skill</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span>Excel </span>
@@ -137,8 +127,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="skill-category hidden">
-                    <h3>Business Analysis</h3>
+                <div class="skill-category hidden" data-cat="business">
+                    <h3><i class="fas fa-briefcase"></i> Business Analysis</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <span>Requirement Gathering</span>
@@ -157,8 +147,43 @@
                             <span>Documentation (BRD/FRD) </span>
                             <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
+                        
                     </div>
                     
+                </div>
+                <div class="skill-category hidden" data-cat="fullstack">
+                    <h3><i class="fas fa-layer-group"></i> Full Stack Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>React.js</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Node.js / Express</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 50%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript, HTML, CSS</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>REST APIs</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 72%"></div></div>
+                        </div>
+
+                        <div class="skill-item">
+                            <span>MySQL / MongoDB / SQLite</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 60%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JWT Authentication & bcrypt</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Git</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -169,19 +194,28 @@
         <div class="container">
             <h2 class="section-title hidden">My Projects</h2>
             <div class="projects-grid">
+
+                <!-- Project 1: NeuroNest -->
                 <div class="project-card hidden">
+                    <div class="project-preview" style="--preview-hue: 160;">
+                        <div class="project-preview-bg">
+                            <div class="preview-icon"><i class="fas fa-brain"></i></div>
+                            <div class="preview-particles"></div>
+                        </div>
+                        <div class="project-preview-overlay">
+                            <span class="preview-label">Interactive Web App</span>
+                            <a href="https://github.com/Nandhitharamesh13/NeuroNest-Kids" target="_blank" class="preview-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
                     <div class="project-content">
                         <h3>NeuroNest</h3>
-                        <p>Developed an interactive educational web application using HTML, CSS, and JavaScript, focusing on an engaging user experience and responsive design to support children's learning and development.
-
-</p>
+                        <p>Developed an interactive educational web application using HTML, CSS, and JavaScript, focusing on an engaging user experience and responsive design to support children's learning and development.</p>
                         <div class="project-tech">
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>Javascript</span>
                             <span>React</span>
                             <span>NodeJS</span>
-                            
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/Nandhitharamesh13/NeuroNest-Kids" class="btn small-btn">View Project</a>
@@ -189,16 +223,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card hidden">
-                    <div class="project-content">
-                        <h3 style="color: #ff6b6b;">Resume Fetch</h3>
-                        <p>
-                            Business Analysis Case Study | BRD | FRD | User Stories | Wireframes<p>
 
-Designed a Business Analysis case study proposing a LinkedIn resume integration feature for recruitment platforms. Produced end-to-end documentation, including BRD, FRD, user stories, wireframes, and process flows to streamline the candidate application experience.
-                        </p>
+                <!-- Project 2: Resume Fetch -->
+                <div class="project-card hidden">
+                    <div class="project-preview" style="--preview-hue: 210;">
+                        <div class="project-preview-bg">
+                            <div class="preview-icon"><i class="fas fa-file-alt"></i></div>
+                            <div class="preview-particles"></div>
+                        </div>
+                        <div class="project-preview-overlay">
+                            <span class="preview-label">Business Analysis Case Study</span>
+                            <a href="https://github.com/Nandhitharamesh13/ResumeFetch-BA-Portfolio" target="_blank" class="preview-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Resume Fetch</h3>
+                        <p>Designed a Business Analysis case study proposing a LinkedIn resume integration feature for recruitment platforms. Produced end-to-end documentation, including BRD, FRD, user stories, wireframes, and process flows to streamline the candidate application experience.</p>
                         <div class="project-tech">
-                            <span>Business Analysis Case Study</span>
+                            <span>Business Analysis</span>
                             <span>BRD</span>
                             <span>FRD</span>
                             <span>Wireframes</span>
@@ -209,15 +251,26 @@ Designed a Business Analysis case study proposing a LinkedIn resume integration 
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 3: Connected Car -->
                 <div class="project-card hidden">
+                    <div class="project-preview" style="--preview-hue: 270;">
+                        <div class="project-preview-bg">
+                            <div class="preview-icon"><i class="fas fa-car"></i></div>
+                            <div class="preview-particles"></div>
+                        </div>
+                        <div class="project-preview-overlay">
+                            <span class="preview-label">Market & Competitive Analysis</span>
+                            <a href="https://github.com/Nandhitharamesh13/connected-car-market-analysis" target="_blank" class="preview-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
                     <div class="project-content">
-                        <h3 style="color: #ff6b6b;" >Connected Car Market & Competitive Analysis</h3>
+                        <h3>Connected Car Market &amp; Competitive Analysis</h3>
                         <p>Researched the connected car industry by analyzing market trends, customer needs, and competitor strategies. Delivered actionable business insights and strategic recommendations through structured market and competitive analysis.</p>
                         <div class="project-tech">
                             <span>Market Research</span>
                             <span>Competitive Intelligence</span>
                             <span>Business Analysis</span>
-                           
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/Nandhitharamesh13/connected-car-market-analysis" class="btn small-btn">View Project</a>
@@ -226,12 +279,21 @@ Designed a Business Analysis case study proposing a LinkedIn resume integration 
                     </div>
                 </div>
 
+                <!-- Project 4: Organic Store -->
                 <div class="project-card hidden">
+                    <div class="project-preview" style="--preview-hue: 120;">
+                        <div class="project-preview-bg">
+                            <div class="preview-icon"><i class="fas fa-store"></i></div>
+                            <div class="preview-particles"></div>
+                        </div>
+                        <div class="project-preview-overlay">
+                            <span class="preview-label">Full Stack E-Commerce</span>
+                            <a href="https://github.com/Nandhitharamesh13/organic-store-fullstack" target="_blank" class="preview-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
                     <div class="project-content">
-                        <h3>organic-store-fullstack</h3>
-                        <p>
-                           A full-stack e-commerce storefront built with a high-performance React + Vite frontend and an Express + SQLite backend.<p> It features a responsive customer shopping catalog with real-time filtering, flash deals, guest checkout, and a review system. The secure admin panel utilizes JWT authentication and bcrypt hashing to manage products, orders, and promotions.
-                        </p>
+                        <h3>Organic Store — Full Stack</h3>
+                        <p>A full-stack e-commerce platform built with React + Vite (frontend) and Express + SQLite (backend). Features real-time product filtering, guest checkout, a review/ratings system, and a secure admin dashboard using JWT auth and bcrypt hashing.</p>
                         <div class="project-tech">
                             <span>React</span>
                             <span>SQL</span>
@@ -241,6 +303,34 @@ Designed a Business Analysis case study proposing a LinkedIn resume integration 
                         <div class="project-links">
                             <a href="https://github.com/Nandhitharamesh13/organic-store-fullstack" class="btn small-btn">View Project</a>
                             <a href="https://github.com/Nandhitharamesh13/organic-store-fullstack" class="github-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Premium E-Commerce -->
+                <div class="project-card hidden">
+                    <div class="project-preview" style="--preview-hue: 340;">
+                        <div class="project-preview-bg">
+                            <div class="preview-icon"><i class="fas fa-shopping-bag"></i></div>
+                            <div class="preview-particles"></div>
+                        </div>
+                        <div class="project-preview-overlay">
+                            <span class="preview-label">Premium Full Stack Build</span>
+                            <a href="https://github.com/Nandhitharamesh13/Premium-E-Commerce-Full-Stack-Build" target="_blank" class="preview-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Premium E-Commerce Full Stack Build</h3>
+                        <p>A modern, responsive e-commerce web application delivering a premium shopping experience across Women, Men, Home &amp; Living, Beauty, and Accessories — built with Python/Reflex for a real-world full-stack experience.</p>
+                        <div class="project-tech">
+                            <span>HTML5 / CSS3</span>
+                            <span>Python</span>
+                            <span>Reflex</span>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Nandhitharamesh13/Premium-E-Commerce-Full-Stack-Build" class="btn small-btn">View Project</a>
+                            <a href="https://github.com/Nandhitharamesh13/Premium-E-Commerce-Full-Stack-Build" class="github-link"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                 </div>
@@ -293,13 +383,7 @@ Designed a Business Analysis case study proposing a LinkedIn resume integration 
                         <p>RD International School, Erode</p>
                     </div>
                 </div>
-                <div class="timeline-item hidden">
-                    <div class="timeline-content">
-                        <span class="date">2019 - 2020</span>
-                        <h3>Secondary School, AISSE</h3>
-                        <p>Chettinad Vidya Mandhir, Karur</p>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </section>
@@ -309,31 +393,127 @@ Designed a Business Analysis case study proposing a LinkedIn resume integration 
         <div class="container">
             <h2 class="section-title hidden">Certifications</h2>
             <div class="cert-grid">
+
+                <!-- Certificate 1 -->
                 <div class="cert-card hidden">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <h3>Data Visualization with Tableau</h3>
-                    <p>Coursera</p>
+                    <div class="cert-preview-wrap">
+                        <iframe class="cert-iframe" src="./certificate/Creating Dashboards and Storytelling with Tableau.pdf#toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Creating Dashboards and Storytelling with Tableau"></iframe>
+                        <div class="cert-overlay">
+                            <a href="./certificate/Creating Dashboards and Storytelling with Tableau.pdf" target="_blank" class="cert-view-btn"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                        <div class="cert-ribbon"><span>CERTIFICATE</span></div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Creating Dashboards &amp; Storytelling with Tableau</h3>
+                        <p><i class="fas fa-award"></i> Coursera / Tableau</p>
+                    </div>
                 </div>
+
+                <!-- Certificate 2 -->
                 <div class="cert-card hidden">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <h3>Python for Everybody</h3>
-                    <p>Coursera</p>
+                    <div class="cert-preview-wrap">
+                        <iframe class="cert-iframe" src="./certificate/Data Visualization with Tableau Project.pdf#toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Data Visualization with Tableau Project"></iframe>
+                        <div class="cert-overlay">
+                            <a href="./certificate/Data Visualization with Tableau Project.pdf" target="_blank" class="cert-view-btn"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                        <div class="cert-ribbon"><span>CERTIFICATE</span></div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Data Visualization with Tableau Project</h3>
+                        <p><i class="fas fa-award"></i> Coursera / Tableau</p>
+                    </div>
                 </div>
+
+                <!-- Certificate 3 -->
                 <div class="cert-card hidden">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <h3>UI Path</h3>
-                    <p>ICT Academy</p>
+                    <div class="cert-preview-wrap">
+                        <iframe class="cert-iframe" src="./certificate/Fundamentals of Visualization with Tableau.pdf#toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Fundamentals of Visualization with Tableau"></iframe>
+                        <div class="cert-overlay">
+                            <a href="./certificate/Fundamentals of Visualization with Tableau.pdf" target="_blank" class="cert-view-btn"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                        <div class="cert-ribbon"><span>CERTIFICATE</span></div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Fundamentals of Visualization with Tableau</h3>
+                        <p><i class="fas fa-award"></i> Coursera / Tableau</p>
+                    </div>
                 </div>
+
+                <!-- Certificate 4 -->
                 <div class="cert-card hidden">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <h3>Multimedia and Animation</h3>
-                    <p>NSDC Certification</p>
+                    <div class="cert-preview-wrap">
+                        <iframe class="cert-iframe" src="./certificate/Git for developers managing workflows.pdf#toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Git for developers managing workflows"></iframe>
+                        <div class="cert-overlay">
+                            <a href="./certificate/Git for developers managing workflows.pdf" target="_blank" class="cert-view-btn"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                        <div class="cert-ribbon"><span>CERTIFICATE</span></div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Git for Developers — Managing Workflows</h3>
+                        <p><i class="fas fa-award"></i> Coursera</p>
+                    </div>
                 </div>
+
+                <!-- Certificate 5 -->
                 <div class="cert-card hidden">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <h3>Introduction to MongoDB</h3>
-                    <p>MongoDB for Students</p>
+                    <div class="cert-preview-wrap">
+                        <iframe class="cert-iframe" src="./certificate/IBM Mainframe Developer.pdf#toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="IBM Mainframe Developer"></iframe>
+                        <div class="cert-overlay">
+                            <a href="./certificate/IBM Mainframe Developer.pdf" target="_blank" class="cert-view-btn"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                        <div class="cert-ribbon"><span>CERTIFICATE</span></div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>IBM Mainframe Developer</h3>
+                        <p><i class="fas fa-award"></i> IBM / Coursera</p>
+                    </div>
                 </div>
+
+                <!-- Certificate 6 -->
+                <div class="cert-card hidden">
+                    <div class="cert-preview-wrap">
+                        <iframe class="cert-iframe" src="./certificate/Introduction to DevOps.pdf#toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Introduction to DevOps"></iframe>
+                        <div class="cert-overlay">
+                            <a href="./certificate/Introduction to DevOps.pdf" target="_blank" class="cert-view-btn"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                        <div class="cert-ribbon"><span>CERTIFICATE</span></div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Introduction to DevOps</h3>
+                        <p><i class="fas fa-award"></i> IBM / Coursera</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 7 -->
+                <div class="cert-card hidden">
+                    <div class="cert-preview-wrap">
+                        <iframe class="cert-iframe" src="./certificate/Programming for Everybody.pdf#toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Programming for Everybody"></iframe>
+                        <div class="cert-overlay">
+                            <a href="./certificate/Programming for Everybody.pdf" target="_blank" class="cert-view-btn"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                        <div class="cert-ribbon"><span>CERTIFICATE</span></div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Programming for Everybody (Python)</h3>
+                        <p><i class="fas fa-award"></i> University of Michigan / Coursera</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 8 -->
+                <div class="cert-card hidden">
+                    <div class="cert-preview-wrap">
+                        <iframe class="cert-iframe" src="./certificate/Visual Analytics with Tableau.pdf#toolbar=0&navpanes=0&scrollbar=0" loading="lazy" title="Visual Analytics with Tableau"></iframe>
+                        <div class="cert-overlay">
+                            <a href="./certificate/Visual Analytics with Tableau.pdf" target="_blank" class="cert-view-btn"><i class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                        <div class="cert-ribbon"><span>CERTIFICATE</span></div>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Visual Analytics with Tableau</h3>
+                        <p><i class="fas fa-award"></i> Coursera / Tableau</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -341,7 +521,7 @@ Designed a Business Analysis case study proposing a LinkedIn resume integration 
     <!-- Achievements Section -->
     <section id="achievements" class="achievements">
         <div class="container">
-            <h2 class="section-title hidden">Achievements</h2>
+            <h2 class="section-title hidden">Awards and Recognition</h2>
             <div class="achievements-container">
                 <div class="achievement-item hidden">
                     <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
@@ -371,6 +551,27 @@ Designed a Business Analysis case study proposing a LinkedIn resume integration 
                         <p>Shortlisted as one among the 100 participants in a contest organized by ICT Academy</p>
                     </div>
                 </div>
+                <div class="achievement-item hidden">
+                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <div class="achievement-content">
+                        <h3>LTM iWin Recognition - Creative</h3>
+                        <p>Awarded the LTM iWin Recognition for showcasing innovation, creative problem solving and contributing ideas that enhanced team efficiency and collaboration.</p>
+                    </div>
+                </div>
+                <div class="achievement-item hidden">
+                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <div class="achievement-content">
+                        <h3>LTM iWin Recognition - Optimism</h3>
+                        <p>Recognized consistently supporting the team, maintaining a positive attitude and going the extra mile during critical situations.</p>
+                    </div>
+                </div>
+                <div class="achievement-item hidden">
+                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <div class="achievement-content">
+                        <h3>LTM iWin Recognition - Partnership</h3>
+                        <p>Awarded the LTM iWin Partnership Recognition for exemplifying teamwork, collaboration and ownership while contributing to shared team objectives and delivering consistent support.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -382,10 +583,10 @@ Designed a Business Analysis case study proposing a LinkedIn resume integration 
             <div class="contact-content">
                 <div class="contact-info hidden">
                     <div class="contact-item">
-                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
                         <div>
-                            <h3>Phone</h3>
-                            <p>8838984540</p>
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/nandhitha-r-63a4332a0" target="_blank" style="color: inherit; text-decoration: none;">nandhitha-r-63a4332a0</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -428,11 +629,10 @@ Designed a Business Analysis case study proposing a LinkedIn resume integration 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p style="color: #ff6b6b;">NANDHITHA.</p>
+                <p>NANDHITHA</p>
                 <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/Nandhitharamesh13" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nandhitha-r-63a4332a0" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
